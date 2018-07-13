@@ -1,0 +1,4 @@
+#Sat Jun 30 12:08:08 CST 2018
+base.0=E\:\\workspace\\studio\\shangdong\\shanDongHome\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+path.0=classes.dex
+renamed.0=classes.dex

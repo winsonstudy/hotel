@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">山东电信桌面</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="time">上午 11：30</string>
+
+</resources>
