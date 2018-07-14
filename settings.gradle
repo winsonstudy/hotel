@@ -1,2 +1,2 @@
-include ':app', ':hotel'
+include ':app', ':hotel', ':ccbnhotel'
 include ':shanDongHome'
