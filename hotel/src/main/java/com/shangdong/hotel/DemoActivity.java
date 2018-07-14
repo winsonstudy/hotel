@@ -38,6 +38,8 @@ public class DemoActivity extends AppCompatActivity {
             }
         });
 
+        System.out.println("This is my first app!");
+
         findViewById(R.id.imglookback).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
