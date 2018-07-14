@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/launcher_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/action_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hotel"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="20sp" />
+
+                <anylife.scrolltextview.ScrollTextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    customAttr:clickEnable="true"
+                    customAttr:isHorizontal="true"
+                    customAttr:speed="3"
+                    customAttr:text="@string/welcome"
+                    customAttr:textColor="@color/md_white_1000"
+                    customAttr:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/actionBtnStyleTwo">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/ic_live_tv" />
+
+                            <TextView
+                                style="@style/actionTvStyle"
+                                android:text="@string/live_tv" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/actionBtnStyleTwo">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/ic_hd" />
+
+                            <TextView
+                                style="@style/actionTvStyle"
+                                android:text="@string/hd" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/actionBtnStyleTwo">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/ic_shopping_cart" />
+
+                            <TextView
+                                style="@style/actionTvStyle"
+                                android:text="@string/shopping" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/actionBtnStyleTwo">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/ic_apps" />
+
+                            <TextView
+                                style="@style/actionTvStyle"
+                                android:text="@string/app" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/actionBtnStyleTwo"
+                            android:layout_marginRight="30dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/ic_settings" />
+
+                            <TextView
+                                style="@style/actionTvStyle"
+                                android:text="@string/setting" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/action_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hotel"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <anylife.scrolltextview.ScrollTextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    customAttr:clickEnable="true"
+                    customAttr:isHorizontal="true"
+                    customAttr:speed="3"
+                    customAttr:text="@string/welcome"
+                    customAttr:textColor="@color/md_white_1000"
+                    customAttr:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<style name="AppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="actionBtnStyle">
+        <item name="android:background">@drawable/action_bg_xml</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="actionBtnStyleTwo" parent="actionBtnStyle">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
+    <style name="actionTvStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="demoAction">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">260dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+</resources>
