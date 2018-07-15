@@ -25,6 +25,7 @@ public class MainActivity extends BaseActivity {
 //                enter();
                 content.setScaleX(1.15f);
                 content.setScaleY(1.15f);
+
             }
         });
 
