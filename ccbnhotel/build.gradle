@@ -39,7 +39,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    compile 'anylife.scrolltextview:ScrollTextviewLib:1.1'
+    implementation 'anylife.scrolltextview:ScrollTextviewLib:1.1'
 
 
 }
