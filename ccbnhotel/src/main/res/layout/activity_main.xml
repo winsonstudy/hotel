@@ -4,37 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg_1"
     android:orientation="vertical"
+    android:clipChildren="false"
     tools:context="com.winson.ccbnhotel.MainActivity">
 
     <Button
+        android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/enter"
-        android:text="enter"
-        />
+        android:text="enter" />
 
 
-    <FrameLayout
+    <LinearLayout
+        android:id="@+id/test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp">
-        <ImageView
-            android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pic0_f1"
-            />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/pic0_f1" />
+
+            <ImageView
+                android:layout_width="164dp"
+                android:layout_height="69dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/text05" />
+
+            <ImageView
+                android:layout_width="164dp"
+                android:layout_height="198dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/pic0_focus" />
+        </FrameLayout>
 
         <ImageView
+            android:layout_width="164dp"
+            android:layout_height="105dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pic0_focus"
-            />
+            android:background="@drawable/pic10_05" />
 
-    </FrameLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
