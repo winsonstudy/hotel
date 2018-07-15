@@ -33,5 +33,5 @@ dependencies {
 //    implementation 'com.github.WinsonZhou:ad-ui:0.1.0'
 //    implementation 'com.github.winsonzhou:ad-ui:0.1.3'
 
-    compile 'com.github.winsonzhou:ad-ui:0.1.6'
+    compile 'com.github.winsonzhou:ad-ui:0.2.1'
 }
