@@ -2,6 +2,7 @@ package com.winson.ccbnhotel;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -9,6 +10,7 @@ import java.util.Calendar;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
     TextView timeTv, dateTv;
     Handler handler;
 
@@ -28,6 +30,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.travel_service).setFocusableInTouchMode(true);
         findViewById(R.id.travel_service).requestFocus();
         findViewById(R.id.test).requestFocus();
+        findViewById(R.id.travel_service).setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                Log.d(TAG, "onFocusChange ---> " + view + " , b : " + b);
+            }
+        });
 
     }
 
