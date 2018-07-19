@@ -76,7 +76,6 @@
 
 
                 <LinearLayout
-                    android:id="@+id/test"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -89,7 +88,9 @@
                         android:layout_height="wrap_content"
                         android:focusable="true">
 
-                        <ImageView style="@style/ActionBackground" />
+                        <ImageView
+                            android:id="@+id/test"
+                            style="@style/ActionBackground" />
 
                         <ImageView
                             style="@style/ActionCover"

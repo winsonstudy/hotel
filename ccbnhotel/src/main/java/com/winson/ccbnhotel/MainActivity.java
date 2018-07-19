@@ -25,8 +25,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         updateTime();
         handler.postDelayed(timeRunnable, 500);
 
+        findViewById(R.id.travel_service).setFocusableInTouchMode(true);
         findViewById(R.id.travel_service).requestFocus();
-        findViewById(R.id.travel_service).setOnClickListener(this);
+        findViewById(R.id.test).requestFocus();
 
     }
 
