@@ -11,7 +11,7 @@
     </style>
 
     <style name="ActionBackground">
-        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusableInTouchMode">false</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
         <item name="android:layout_width">324dp</item>

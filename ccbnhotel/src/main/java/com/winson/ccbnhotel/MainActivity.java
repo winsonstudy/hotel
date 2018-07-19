@@ -8,9 +8,10 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class MainActivity extends BaseActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener, View.OnFocusChangeListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
+
     TextView timeTv, dateTv;
     Handler handler;
 
@@ -27,15 +28,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         updateTime();
         handler.postDelayed(timeRunnable, 500);
 
-        findViewById(R.id.travel_service).setFocusableInTouchMode(true);
-        findViewById(R.id.travel_service).requestFocus();
-        findViewById(R.id.test).requestFocus();
-        findViewById(R.id.travel_service).setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                Log.d(TAG, "onFocusChange ---> " + view + " , b : " + b);
-            }
-        });
+        findViewById(R.id.travel_service).setOnFocusChangeListener(this);
+        findViewById(R.id.tv_item).setOnFocusChangeListener(this);
+        findViewById(R.id.hotel_service).setOnFocusChangeListener(this);
+        findViewById(R.id.hotel_feature).setOnFocusChangeListener(this);
 
     }
 
@@ -71,5 +67,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (id) {
 
         }
+    }
+
+    @Override
+    public void onFocusChange(View view, boolean b) {
+        view.setScaleX(b ? 1.1f : 1f);
+        view.setScaleY(b ? 1.1f : 1f);
     }
 }
