@@ -64,7 +64,8 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,13 +84,12 @@
                     android:orientation="vertical">
 
                     <FrameLayout
-                        android:id="@+id/content"
+                        android:id="@+id/travel_service"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:focusable="true">
 
-                        <ImageView
-                            style="@style/ActionBackground"
-                            android:background="@drawable/action_bg" />
+                        <ImageView style="@style/ActionBackground" />
 
                         <ImageView
                             style="@style/ActionCover"
@@ -118,9 +118,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
-                        <ImageView
-                            style="@style/ActionBackground"
-                            android:background="@drawable/action_bg" />
+                        <ImageView style="@style/ActionBackground" />
 
                         <ImageView
                             style="@style/ActionCover"
@@ -149,9 +147,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
-                        <ImageView
-                            style="@style/ActionBackground"
-                            android:background="@drawable/action_bg" />
+                        <ImageView style="@style/ActionBackground" />
 
                         <ImageView
                             style="@style/ActionCover"
@@ -181,9 +177,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
-                        <ImageView
-                            style="@style/ActionBackground"
-                            android:background="@drawable/action_bg" />
+                        <ImageView style="@style/ActionBackground" />
 
                         <ImageView
                             style="@style/ActionCover"

@@ -2,11 +2,12 @@ package com.winson.ccbnhotel;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     TextView timeTv, dateTv;
     Handler handler;
@@ -23,6 +24,10 @@ public class MainActivity extends BaseActivity {
 
         updateTime();
         handler.postDelayed(timeRunnable, 500);
+
+        findViewById(R.id.travel_service).requestFocus();
+        findViewById(R.id.travel_service).setOnClickListener(this);
+
     }
 
     @Override
@@ -51,4 +56,11 @@ public class MainActivity extends BaseActivity {
         dateTv.setText(String.format("%d/%02d/%02d", year, month, day));
     }
 
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        switch (id) {
+
+        }
+    }
 }
