@@ -8,6 +8,53 @@
     android:orientation="vertical"
     tools:context="com.winson.ccbnhotel.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:text="@string/hotel_name"
+            android:textColor="@color/hotel_name"
+            android:textSize="36sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="40sp"
+                android:text="09:30"
+                android:textColor="@color/hotel_name" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="32sp"
+                android:text="2018/07/19"
+                android:textColor="@color/hotel_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -121,6 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:clipChildren="false"
                 android:orientation="vertical">
 
