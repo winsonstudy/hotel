@@ -6,4 +6,7 @@
 
     <color name="main_color">#AB8F81</color>
 
+    <color name="btn_p">#aa015AFF</color>
+    <color name="btn_n">#015AFF</color>
+
 </resources>
