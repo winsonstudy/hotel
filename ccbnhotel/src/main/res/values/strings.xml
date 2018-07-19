@@ -5,4 +5,8 @@
     <string name="am">上午</string>
     <string name="pm">下午</string>
     <string name="hotel_name">智慧酒店</string>
+    <string name="choose">选择</string>
+    <string name="sure">确认</string>
+    <string name="wifi_account">wifi账号:</string>
+    <string name="wifi_pwd">wifi密码:</string>
 </resources>

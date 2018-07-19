@@ -1,202 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/bg_1"
-    android:clipChildren="false"
     android:orientation="vertical"
     tools:context="com.winson.ccbnhotel.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="40dp"
-            android:text="@string/hotel_name"
-            android:textColor="@color/hotel_name"
-            android:textSize="36sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
 
-        <View
-            android:layout_width="0dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:text="@string/hotel_name"
+                android:textColor="@color/main_color"
+                android:textSize="36sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="09:30"
+                    android:textColor="@color/main_color"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="2018/07/19"
+                    android:textColor="@color/main_color"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="horizontal"
+                android:paddingTop="30dp">
+
+
+                <LinearLayout
+                    android:id="@+id/test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            style="@style/ActionBackground"
+                            android:background="@drawable/action_bg" />
+
+                        <ImageView
+                            style="@style/ActionCover"
+                            android:background="@drawable/travel_service" />
+
+                        <ImageView
+                            style="@style/ActionText"
+                            android:background="@drawable/travel_service_cover" />
+                    </FrameLayout>
+
+                    <ImageView
+                        style="@style/ActionReflection"
+                        android:background="@drawable/travel_service_r" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            style="@style/ActionBackground"
+                            android:background="@drawable/action_bg" />
+
+                        <ImageView
+                            style="@style/ActionCover"
+                            android:background="@drawable/tv_item" />
+
+                        <ImageView
+                            style="@style/ActionText"
+                            android:background="@drawable/tv_cover" />
+                    </FrameLayout>
+
+                    <ImageView
+                        style="@style/ActionReflection"
+                        android:background="@drawable/tv_item_r" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            style="@style/ActionBackground"
+                            android:background="@drawable/action_bg" />
+
+                        <ImageView
+                            style="@style/ActionCover"
+                            android:background="@drawable/hotel_service" />
+
+                        <ImageView
+                            style="@style/ActionText"
+                            android:background="@drawable/hotel_service_cover" />
+                    </FrameLayout>
+
+                    <ImageView
+                        style="@style/ActionReflection"
+                        android:background="@drawable/hotel_service_r" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            style="@style/ActionBackground"
+                            android:background="@drawable/action_bg" />
+
+                        <ImageView
+                            style="@style/ActionCover"
+                            android:background="@drawable/hotel_feature" />
+
+                        <ImageView
+                            style="@style/ActionText"
+                            android:background="@drawable/hotel_feature_cover" />
+                    </FrameLayout>
+
+                    <ImageView
+                        style="@style/ActionReflection"
+                        android:background="@drawable/hotel_feature_r" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/wifi" />
+
+            <TextView
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/wifi_account" />
+
+            <TextView
+                android:id="@+id/wifi_account"
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xianggelila" />
+
+            <TextView
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="@string/wifi_pwd" />
+
+            <TextView
+                android:id="@+id/wifi_pwd"
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="888666" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="40dp"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/direction" />
 
             <TextView
-                android:id="@+id/time"
+                style="@style/MainText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:textSize="40sp"
-                android:text="09:30"
-                android:textColor="@color/hotel_name" />
+                android:layout_marginLeft="5dp"
+                android:text="@string/choose" />
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sure" />
 
             <TextView
-                android:id="@+id/date"
+                style="@style/MainText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:textSize="32sp"
-                android:text="2018/07/19"
-                android:textColor="@color/hotel_name" />
+                android:layout_marginLeft="5dp"
+                android:text="@string/sure" />
+
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipChildren="false"
-            android:orientation="horizontal"
-            android:paddingTop="30dp">
-
-
-            <LinearLayout
-                android:id="@+id/test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:clipChildren="false"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/content"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        style="@style/ActionBackground"
-                        android:background="@drawable/action_bg" />
-
-                    <ImageView
-                        style="@style/ActionCover"
-                        android:background="@drawable/travel_service" />
-
-                    <ImageView
-                        style="@style/ActionText"
-                        android:background="@drawable/travel_service_cover" />
-                </FrameLayout>
-
-                <ImageView
-                    style="@style/ActionReflection"
-                    android:background="@drawable/travel_service_r" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:clipChildren="false"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        style="@style/ActionBackground"
-                        android:background="@drawable/action_bg" />
-
-                    <ImageView
-                        style="@style/ActionCover"
-                        android:background="@drawable/tv_item" />
-
-                    <ImageView
-                        style="@style/ActionText"
-                        android:background="@drawable/tv_cover" />
-                </FrameLayout>
-
-                <ImageView
-                    style="@style/ActionReflection"
-                    android:background="@drawable/tv_item_r" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:clipChildren="false"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        style="@style/ActionBackground"
-                        android:background="@drawable/action_bg" />
-
-                    <ImageView
-                        style="@style/ActionCover"
-                        android:background="@drawable/hotel_service" />
-
-                    <ImageView
-                        style="@style/ActionText"
-                        android:background="@drawable/hotel_service_cover" />
-                </FrameLayout>
-
-                <ImageView
-                    style="@style/ActionReflection"
-                    android:background="@drawable/hotel_service_r" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:clipChildren="false"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        style="@style/ActionBackground"
-                        android:background="@drawable/action_bg" />
-
-                    <ImageView
-                        style="@style/ActionCover"
-                        android:background="@drawable/hotel_feature" />
-
-                    <ImageView
-                        style="@style/ActionText"
-                        android:background="@drawable/hotel_feature_cover" />
-                </FrameLayout>
-
-                <ImageView
-                    style="@style/ActionReflection"
-                    android:background="@drawable/hotel_feature_r" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
-</LinearLayout>
+</FrameLayout>

@@ -36,4 +36,10 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
+    <style name="MainText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
 </resources>
