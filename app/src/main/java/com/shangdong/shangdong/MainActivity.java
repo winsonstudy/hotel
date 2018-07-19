@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import com.winson.ui.widget.RateLayout;
 
 import java.util.ArrayList;
 import java.util.List;
